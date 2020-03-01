@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 const viewPath = './views/';
 
+//여기서 URL 관리, 그래서 이름이 라우터임
 router.get('/', (req, res) => {
     res.sendFile(viewPath + 'index.html', { root: __dirname });
 });
